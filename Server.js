@@ -26,7 +26,7 @@ app.get('/',(req,res)=>{
 })
 
 // port define kr rhe h --- jha server chlega
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 //server ko start kr rhe h app.listen s
 app.listen(PORT,"0.0.0.0",()=>{
